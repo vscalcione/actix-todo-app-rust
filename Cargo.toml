@@ -1,0 +1,37 @@
+[package]
+name = "actix-todo-rust"
+version = "0.1.0"
+authors = ["vscalcione <vincenzo99.scalcione@gmail.com>"]
+edition = "2018"
+
+[features]
+default = []
+
+# Integration tests
+integration = []
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-rt = "1.1.1"
+actix-web = "2.0.0"
+actix-http = "1.0.1"
+actix-service = "1.0.6"
+config = "0.10.1"
+deadpool-postgres = "0.5.6"
+dotenv = "0.15.0"
+futures = "0.3.5"
+serde = { version = "1.0.115", features = ["derive"] }
+slog = "2.5.2"
+slog-term = "2.6.0"
+slog-async = "2.5.0"
+slog-envlogger = "2.2.0"
+tokio-pg-mapper = "0.1.8"
+tokio-pg-mapper-derive = "0.1.5"
+tokio-postgres = "0.5.5"
+diesel_cli = "1.4.1"
+
+[dev-dependencies]
+lazy_static = "1.4.0"
+serde_json = "1.0.57"
+
